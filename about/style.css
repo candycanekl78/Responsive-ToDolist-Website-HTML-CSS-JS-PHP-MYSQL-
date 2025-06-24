@@ -1,0 +1,265 @@
+/* Body Styles */
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background: white;
+    opacity: 0.9;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile section */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.profile img {
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    color: #000000;
+    font-size: 16px;
+}
+
+/* Buttons */
+.add-task {
+    background-color: rgb(255, 249, 249);
+    background-size: cover;
+    color: rgb(41, 36, 36);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid white;
+    border-color: #ff5511cc;
+}
+
+.login-btn {
+    background-color: #ff5511cc;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.dlt-btn {
+    background-color: #f21616;
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 40px;
+}
+.edit-btn{
+    width: 50px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ff1111cc;
+    outline: none; /* optional: removes blue border on focus */
+    box-sizing: border-box;
+
+
+}
+
+/* Navigation Lists */
+nav ul, .sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li, .sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li.active, .sidebar ul li:hover {
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    color: rgb(35, 33, 33);
+    margin-bottom: 30px;
+}
+
+.task-section {
+    background-color: rgba(84, 41, 226, 0.351);
+    opacity: 0.9;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+}
+
+.task-section h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #222;
+}
+
+.task-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.task-section li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #222;
+}
+
+/* Task inner flex */
+.task-section li > * {
+    margin-right: 10px;
+}
+
+/* Task content section */
+.task-section li span.time {
+    color: #666;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+/* Popup Sidebar (appears on profile click) */
+.popup-sidebar {
+    display: none; /* hidden by default */
+    position: absolute;
+    top: 10px; /* adjust as needed */
+    left: 10px; /* push from the left edge */
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    border-radius: 8px;
+    width: 200px;
+  }
+  
+  
+
+.popup-sidebar.visible {
+    display: block;
+}
+
+.popup-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.popup-header img {
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.popup-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popup-sidebar ul li {
+    margin: 15px 0;
+}
+
+.popup-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.popup-sidebar ul li:hover {
+    background-color: #f5f5f5;
+}
+
+.sidebar input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ff1111cc;
+    outline: none; /* optional: removes blue border on focus */
+    box-sizing: border-box;
+  }
+  .calendar-popup {
+    position: absolute;
+    top: 60px;
+    left: 120px; /* Adjust to show beside the sidebar */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 200;
+    width: 500px;
+    font-family: sans-serif;
+  }
+  .calendar-popup table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  .calendar-popup th,
+  .calendar-popup td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+  }
+  .calendar-popup th {
+    background-color: #f2f2f2;
+  }
+  
+  a {
+    text-decoration: none;
+}
+#calendarPopup button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#calendarPopup button:hover {
+    background-color: #e04343;
+}
