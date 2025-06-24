@@ -5,8 +5,8 @@ To-Do List App (HTML, CSS, JavaScript, PHP, MySQL)
 A simple and responsive To-Do List Web Application that allows users to create, manage, and delete tasks in real-time. Built using HTML, CSS, JavaScript, PHP, and MySQL, this project demonstrates full-stack functionality with database integration.
 
 
+<img width="1440" alt="Screenshot 2025-05-04 at 4 51 42 PM" src="https://github.com/user-attachments/assets/c459620d-2bec-4514-bef9-5cae8e685a50" />
 
-<img width="1440" alt="Screenshot 2025-05-04 at 4 49 58 PM" src="https://github.com/user-attachments/assets/191707a3-aa98-4464-95f1-9be7fc9e267b" />
 
 
 🔧 Features
